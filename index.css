@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    background: #F4ECF6;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.bigger-cirlce {
+    width: 295px;
+    height: 295px;
+    border: 5px solid #040245;
+    border-radius: 50%;
+    background-color: blue;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.smaller-cirlce {
+    background: url("./4124608_24033.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 285px;
+    height: 180px;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    border-radius: 150px 150px 30px 30px;
+    transform: translate(-50%, -50%);
+    /* background-color: #030a2a; */
+    position: absolute;
+    top: 41%;
+    left: 50%;
+}
+.faraway{
+    background: url("./transport_12937383.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    transform: translateY(95px);
+    position: relative;
+    animation: MyDiv;
+    animation-duration: 9s;
+    animation-iteration-count: 8;
+    animation-timing-function: ease-in  infinite;
+    animation-direction: normal;
+}
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.on{
+    position: absolute;
+    background-color: #030F24;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: grid;
+    place-content: center;
+    top: 57%;
+    left: 42%;
+    cursor: pointer;
+}
+
+.bi-power{
+    color: #fff;
+}
+
+.switch {
+    position: absolute;
+    background-color: #030F24;
+    border-radius: 50%;
+    width: 105px;
+    height: 105px;
+    /* display: flex;
+    justify-content: center; */
+    top: 57%;
+    left: 46%;
+    cursor: pointer;
+}
+
+/*------- SUNRISE ------- */
+.sun-set {
+    transform: rotate(0);
+    transform: translateY(40px);
+    margin-left: -3rem;
+}
+
+.SS {
+    color: #fff;
+    font-size: 34px;
+    margin-right: 25px;
+}
+
+/*------- SUNDOWN ------- */
+.sun-dawn{
+    transform: rotate(0);
+    transform: translateY(-20px);
+    color: #fff;
+}
+
+.displayNone{
+    display: none;
+}
+
+/*------- FULL-MOON ------- */
+.full-moon {
+    transform: rotate(45deg);
+    transform: translateX(40px);
+    color: #fff;
+}
+
+/*------- Half-MOON ------- */
+.half-moon {
+    transform: rotate(35deg);
+    transform: translateY(23px);
+    color: #fff;
+}
+ 
+/* CLASSES FOR JS */
+.transform{
+    transition: all ease 1s;
+}
+.visibility{
+    visibility: hidden;
+}
+.switchPlay-SunDown{
+    transform: rotate(45deg);
+    transform: translateY(10px);
+    margin-left: 1.5rem;
+    color: #fff;
+}
+.switchPlay-FullMoon{
+    transform: rotate(35deg);
+    transform: translateY(23px);
+    margin-left: 5rem;
+}
+.switchPlay-HalfMoon{
+    transform: rotate(0);
+    transform: translateY(40px);
+    color: #fff;
+}
+.switchPlay-SUNSET{
+    transform: rotate(0);
+    transform: translateY(-20px);
+    margin-left: -4rem;
+    color: #fff;
+}
+
+
+/* KEYFRAMES */
+@keyframes MyDiv {
+    0%   {left: 0px; top: 0px;}
+    100%  {left: 200px; top: 0px;}
+  }
