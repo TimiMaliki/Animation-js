@@ -151,7 +151,7 @@ body {
 .visibility{
     visibility: hidden;
 }
-/* SWITCHPLAY ONE */
+/* SWITCHPLAY SUNSET */
 .switchPlay-SunDown{
     transform: rotate(45deg);
     transform: translateY(2px);
@@ -179,6 +179,13 @@ body {
     color: #fff;
 }
 
+/* SWITCHPLAY SUNDOWN PLAY */
+.sunDOWN-play-sundown{
+    transform: rotate(35deg);
+    transform: translateY(23px);
+    transition: all ease 0.5s;
+    margin-left: 5rem;
+}
 
 /* KEYFRAMES */
 @keyframes MyDiv {

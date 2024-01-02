@@ -19,19 +19,24 @@ powerBtn.addEventListener('click' , (e) =>{
     faraway.classList.toggle('visibility')
     faraway.classList.add("faraway")
     semiCircle.classList.toggle('visibility')
-
-
-     TOGGLE
-      sunSetImage.classList.toggle('visibility')
 })
 
-// SUNSET 
+function switchesForSunSet(){
+    
 
-// function changeBg(){
-//     if(semiCircle.has("smaller-cirlce")){
-//         biggerCircle.removeChild(semiCircle)
-//     }
-// }
+    //SWITCHING PLACES
+    sunSet.classList.add("switchPlay-SunDown")
+    sunDown.classList.add("switchPlay-FullMoon")
+    fullMoon.classList.add("switchPlay-HalfMoon")
+    halfMoon.classList.add("switchPlay-SUNSET")
+    
+
+
+
+}
+
+
+// SUNSET 
 
 sunSet.addEventListener( "click" , (e) => {
 
@@ -39,11 +44,15 @@ sunSet.addEventListener( "click" , (e) => {
     sunSetImage.classList.add("SunsetImg")
      biggerCircle.append(sunSetImage)
     
+     switchesForSunSet()
 
-    //SWITCHING PLACES
-      sunSet.classList.add("switchPlay-SunDown")
-      sunDown.classList.add("switchPlay-FullMoon")
-      fullMoon.classList.add("switchPlay-HalfMoon")
-      halfMoon.classList.add("switchPlay-SUNSET")
+
+      faraway.classList.remove("faraway")
+
+     
 })
 
+// SUNDOWN
+sunDown.addEventListener( "click" , (e) => {
+      
+})
