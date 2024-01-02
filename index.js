@@ -22,6 +22,7 @@ powerBtn.addEventListener('click' , (e) =>{
 // SUNSET 
 sunSet.addEventListener( "click" , (e) => {
 
+    
 
     //SWITCHING PLACES
       sunSet.classList.add("switchPlay-SunDown")
