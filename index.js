@@ -23,7 +23,6 @@ powerBtn.addEventListener('click' , (e) =>{
 
 function switchesForSunSet(){
     
-
     //SWITCHING PLACES
     sunSet.classList.add("switchPlay-SunDown")
     sunDown.classList.add("switchPlay-FullMoon")
@@ -31,7 +30,14 @@ function switchesForSunSet(){
     halfMoon.classList.add("switchPlay-SUNSET")
     
 
+    if(sunDown.classList.contains("sunDowncheck")){
+        sunDown.classList.add("sunDOWN-play-sundown")
+        halfMoon.classList.add("sunDOWN-play-HalfMoon")
+        sunSet.classList.add("sunDOWN-play-sunset")
+        fullMoon.classList.add("sunDOWN-play-FullMoon")
 
+        
+     }
 
 }
 
@@ -43,16 +49,16 @@ sunSet.addEventListener( "click" , (e) => {
     const sunSetImage = document.createElement("div")
     sunSetImage.classList.add("SunsetImg")
      biggerCircle.append(sunSetImage)
-    
      switchesForSunSet()
-
-
       faraway.classList.remove("faraway")
 
-     
 })
 
 // SUNDOWN
 sunDown.addEventListener( "click" , (e) => {
-      
+    const sunDownImage = document.createElement("div")
+    sunDownImage.classList.add("SunDownImg")
+     biggerCircle.append(sunDownImage)
+     switchesForSunSet()
+    
 })

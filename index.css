@@ -54,6 +54,21 @@ body {
     top: 41%;
     left: 50%;
 }
+.SunDownImg{
+    background: url("./9146948_4094511.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 285px;
+    height: 180px;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    border-radius: 150px 150px 30px 30px;
+    transform: translate(-50%, -50%);
+    /* background-color: #030a2a; */
+    position: absolute;
+    top: 41%;
+    left: 50%;
+}
 .faraway{
     background: url("./transport_12937383.png");
     background-position: center;
@@ -181,10 +196,31 @@ body {
 
 /* SWITCHPLAY SUNDOWN PLAY */
 .sunDOWN-play-sundown{
+    transform: rotate(0);
+    transform: translateY(60px);
+    transition: all ease 0.5s;
+    margin-left: 0.3rem;
+    color: #fff;
+}
+.sunDOWN-play-sunset{
     transform: rotate(35deg);
-    transform: translateY(23px);
+    transform: translateY(41px);
     transition: all ease 0.5s;
     margin-left: 5rem;
+}
+.sunDOWN-play-FullMoon{
+    transform: rotate(0);
+    transform: translateY(-3px);
+    transition: all ease 0.5s;
+    margin-left: -4rem;
+    color: #fff;
+}
+.sunDOWN-play-HalfMoon{
+    transform: rotate(45deg);
+    transform: translateY(-58px);
+    transition: all ease 0.5s;
+    margin-left: 0.3rem;
+    color: #fff;
 }
 
 /* KEYFRAMES */
