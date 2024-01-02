@@ -1,4 +1,5 @@
 const powerBtn = document.querySelector(".bi-power")
+const biggerCircle = document.querySelector(".bigger-cirlce");
 const semiCircle = document.querySelector(".smaller-cirlce");
 const switchBtn = document.querySelector(".switch")
 
@@ -12,16 +13,31 @@ const faraway = document.querySelector(".faraway")
 
 
 // POWER BTN (TURN ON)
+
 powerBtn.addEventListener('click' , (e) =>{
    // TOGGLE CLASS
     faraway.classList.toggle('visibility')
     faraway.classList.add("faraway")
     semiCircle.classList.toggle('visibility')
+
+
+     TOGGLE
+      sunSetImage.classList.toggle('visibility')
 })
 
 // SUNSET 
+
+// function changeBg(){
+//     if(semiCircle.has("smaller-cirlce")){
+//         biggerCircle.removeChild(semiCircle)
+//     }
+// }
+
 sunSet.addEventListener( "click" , (e) => {
 
+    const sunSetImage = document.createElement("div")
+    sunSetImage.classList.add("SunsetImg")
+     biggerCircle.append(sunSetImage)
     
 
     //SWITCHING PLACES

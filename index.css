@@ -39,6 +39,21 @@ body {
     top: 41%;
     left: 50%;
 }
+.SunsetImg{
+    background: url("./sunset-silhouettes-trees-mountains-generative-ai.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 285px;
+    height: 180px;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    border-radius: 150px 150px 30px 30px;
+    transform: translate(-50%, -50%);
+    /* background-color: #030a2a; */
+    position: absolute;
+    top: 41%;
+    left: 50%;
+}
 .faraway{
     background: url("./transport_12937383.png");
     background-position: center;
@@ -136,6 +151,7 @@ body {
 .visibility{
     visibility: hidden;
 }
+/* SWITCHPLAY ONE */
 .switchPlay-SunDown{
     transform: rotate(45deg);
     transform: translateY(2px);
